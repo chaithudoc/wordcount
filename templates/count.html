@@ -1,0 +1,11 @@
+
+<h2> Your Text: {{ fulltext }}</h2>
+
+<h4> word count: There are {{ wordlist }} words in your text</h4>
+
+<a href="{% url 'home' %}">Start again</a><br><br>
+
+{% for key, value in worddict.items %}
+    {{key}} :
+    {{value}} <br>
+{% endfor %}
